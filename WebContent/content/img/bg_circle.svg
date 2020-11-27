@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{opacity:0.5;}
+	.st2{fill:#40ddc6;}
+	.st3{fill:url(#pattern);}
+	.st4{fill:#40ddc6;}
+</style>
+<pattern id='pattern' x='0' y='0' width='30' height='30' viewBox='0 0 4 4' patternUnits='userSpaceOnUse'>
+    <path class='st2' fill-opacity='0.5' d='M1 3h1v1H1V3zm2-2h1v1H3V1z' />
+</pattern>
+<path class="st3" d="M0,0v1000h1000V0H0z M498.8,822.6c-177.4,0-321.3-143.9-321.3-321.3S321.4,180,498.8,180
+	s321.3,143.9,321.3,321.3S676.2,822.6,498.8,822.6z"/>
+<path class="st4" d="M305.5,619c0,0-0.3,0.3-0.5,1h387l0,0L560,440c0,0-15.8-21.3-31.5,0L447,551.3l-30-40.8c0,0-15.8-21.3-31.5,0
+	L305.5,619z"/>
+<path class="st4" d="M379.8,415.8c0-18-14.3-32.5-32.3-32.5s-32.3,14.3-32.3,32.5s14.3,32.5,32.3,32.5S379.8,433.8,379.8,415.8"/>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "no"?>
+<?xml-stylesheet type="html/xsl" href="feedback.xsl"?>
+
+<!DOCTYPE feedbacks [
+<!ELEMENT feedbacks (feedback+)>
+<!ELEMENT feedback (name, age, email, info)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT info (#PCDATA)>
+]>
+
+
+<feedbacks>
+    <feedback>
+        <name>Anonymous</name>
+        <age>20</age>
+        <email>anonymous@gmail.com</email>
+        <info>The best outreach program! Keep it up!</info>
+    </feedback>
+
+    <feedback>
+        <name>Abhishek</name>
+        <age>40</age>
+        <email>marpu@gmail.com</email>
+        <info>Kool job guys, btw, I am Salman Khan fanboy!</info>
+    </feedback>
+
+    <feedback>
+        <name>Himanshu</name>
+        <age>50</age>
+        <email>hitman6k@gmail.com</email>
+        <info>I'm a developer but I did nothing, lol!</info>
+    </feedback>
+</feedbacks>

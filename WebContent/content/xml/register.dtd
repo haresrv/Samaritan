@@ -1,0 +1,25 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT users (user)+>
+<!ATTLIST users
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT user (username,email,password,reenter_password)>
+<!ATTLIST user
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT username (#PCDATA)>
+<!ATTLIST username
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT password (#PCDATA)>
+<!ATTLIST password
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT reenter_password (#PCDATA)>
+<!ATTLIST reenter_password
+  xmlns CDATA #FIXED ''>

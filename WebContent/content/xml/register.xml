@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "no"?>
+<?xml-stylesheet type="html/xsl" href="register.xsl"?>
+
+<!DOCTYPE users [
+<!ELEMENT users (user+)>
+<!ELEMENT user (username, email, password, reenter_password)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT reenter_password (#PCDATA)> 
+]>
+
+
+<users>
+    <user>
+        <username>Akshay</username>
+        <email>akshaypenumudi@gmail.com</email>
+        <password>1234</password>
+        <reenter_password>1234</reenter_password>
+    </user>
+
+    <user>
+        <username>Akash</username>
+        <email>akashsuper2000@gmail.com</email>
+        <password>1234</password>
+        <reenter_password>1234</reenter_password>
+    </user>
+
+    <user>
+        <username>Hare</username>
+        <email>haresrv@gmail.com</email>
+        <password>1234</password>
+        <reenter_password>1234</reenter_password>
+    </user>
+
+    <user>
+        <username>Abhishek</username>
+        <email>abhishekmarpu@gmail.com</email>
+        <password>1234</password>
+        <reenter_password>1234</reenter_password>
+    </user>
+
+    <user>
+        <username>Himanshu</username>
+        <email>himanshukumar@gmail.com</email>
+        <password>1234</password>
+        <reenter_password>1234</reenter_password>
+    </user>
+
+
+</users>

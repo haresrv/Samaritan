@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "no"?>
+<?xml-stylesheet type="html/xsl" href="users.xsl"?>
+
+<!DOCTYPE users [
+<!ELEMENT users (user+)>
+<!ELEMENT user (username, email, joined, role, status, donations, payments)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT joined (#PCDATA)>
+<!ELEMENT role (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT donations (#PCDATA)>
+<!ELEMENT payments (payment*)>
+<!ELEMENT payment (amount, date)>
+<!ELEMENT amount (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+]>
+
+
+<users>
+    <user>
+        <username>Haresankaran</username>
+        <email>haresrv@gmail.com</email>
+        <joined>2/2/2002</joined>
+        <role>admin</role>
+        <status>active</status>
+        <donations>6000</donations>
+
+        <payments>
+            <payment>
+                <amount>3000</amount>
+                <date>20/5/2014</date>
+            </payment>
+            <payment>
+                <amount>3000</amount>
+                <date>20/5/2017</date>
+            </payment>
+        </payments>
+    </user>
+
+    <user>
+        <username>Himanshu</username>
+        <email>himanshu2606@gmail.com</email>
+        <joined>10/10/2018</joined>
+        <role>admin</role>
+        <status>active</status>
+        <donations>5000</donations>
+
+        <payments>
+            <payment>
+                <amount>2000</amount>
+                <date>10/10/2018</date>
+            </payment>
+            <payment>
+                <amount>3000</amount>
+                <date>10/10/2019</date>
+            </payment>
+        </payments>
+    </user>
+
+    <user>
+        <username>Akash</username>
+        <email>akash2000@gmail.com</email>
+        <joined>9/3/2000</joined>
+        <role>admin</role>
+        <status>active</status>
+        <donations>10000</donations>
+
+        <payments>
+            <payment>
+                <amount>4000</amount>
+                <date>9/3/2014</date>
+            </payment>
+            <payment>
+                <amount>6000</amount>
+                <date>9/3/2017</date>
+            </payment>
+        </payments>
+    </user>
+
+    <user>
+        <username>Akshay</username>
+        <email>akshayrocks@gmail.com</email>
+        <joined>1/1/2010</joined>
+        <role>member</role>
+        <status>inactive</status>
+        <donations>20000</donations>
+
+        <payments>
+            <payment>
+                <amount>16000</amount>
+                <date>1/1/2011</date>
+            </payment>
+            <payment>
+                <amount>4000</amount>
+                <date>1/1/2016</date>
+            </payment>
+        </payments>
+    </user>
+</users>

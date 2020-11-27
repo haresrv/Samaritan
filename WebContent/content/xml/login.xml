@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "no"?>
+<?xml-stylesheet type="html/xsl" href="login.xsl"?>
+
+<!DOCTYPE users [
+<!ELEMENT users (user+)>
+<!ELEMENT user (username, password)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+]>
+
+
+<users>
+    <user>
+        <username>Akshay</username>
+        <password>1234</password>
+    </user>
+
+    <user>
+        <username>Akash</username>
+        <password>1234</password>
+    </user>
+
+    <user>
+        <username>Hare</username>
+        <password>1234</password>
+    </user>
+
+    <user>
+        <username>Abhishek</username>
+        <password>1234</password>
+    </user>
+
+    <user>
+        <username>Himanshu</username>
+        <password>1234</password>
+    </user>
+
+
+</users>
