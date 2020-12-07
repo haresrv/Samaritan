@@ -23,7 +23,9 @@ public class Gotopayment extends HttpServlet {
 		String uname = request.getParameter("id");
 		String pass = request.getParameter("password");
 		LoginDao user = new LoginDao();	
-		
+		HttpSession sessionx = request.getSession();
+		sessionx.removeAttribute("error");
+		sessionx.removeAttribute("error2");
 		try {
 			if(user.check(uname, pass)==1)
 			{
@@ -39,7 +41,12 @@ public class Gotopayment extends HttpServlet {
 				response.sendRedirect("payment.jsp"); 
 			}
 			else
+			{
+				HttpSession session = request.getSession();
+				session.setAttribute("error","Not a Valid Username/password");
 				response.sendRedirect("login.jsp");
+			}
+				
 			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block

@@ -66,7 +66,7 @@
             <h1 class='Heads'>Register as a donor</h1>
             <h7 class='Content btn-danger'>* We collect this information only for official records purposes. We won't spam your mails.</h7>
             <div class='Content'>
-                <form action='/payment.jsp' onsubmit="return validate()">
+                <form action='onRegister' onsubmit="return CheckPassword()" method="post">
 
                     <div class='FormGroup'>
                         <input class='InputBoxes' name='id' placeholder='Username' pattern="([^\s][A-zÃ-Å¾\s]+)" required></input>
@@ -92,8 +92,13 @@
                                 required></input>
                             <span class='Subheads' name='pass' style='visibility: collapse;'></span>      
                             <h7 class='text-danger' id='passinv'></h7>
+                 <%  if(session.getAttribute("error2")!=null) {%>
+                            	<h7 class='text-danger' id='passinv'><%= session.getAttribute("error2") %>  </h7>
+                    	<%} %>
+        
                     </div>
-
+					
+		
 
                     <input class='btn-lg btn btn-default InputBoxes Select' style="width:150px" type='submit' value='Register' /><br />
                     

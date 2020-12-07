@@ -60,7 +60,10 @@
                                 required></input>
                             <span class='Subheads' name='passinv' style='visibility: collapse;'>Invalid
                                 password!</span>
-                            <h7 class='text-danger' id='passinv'></h7>
+                                <h7 class='text-danger' id='passinv'></h7>
+                             <%  if(session.getAttribute("error")!=null) {%>
+                            	<h7 class='text-danger' id='passinv'><%= session.getAttribute("error") %>  </h7>
+                            	<%} %>
                         </div>
     
                         <input class='btn-lg btn btn-default InputBoxes Select' type='submit' value='Login' /><br />

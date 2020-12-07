@@ -66,6 +66,8 @@ response.setHeader("Expires","0");
   
   <!-- Copyrights Section -->
 </div>
+<br><br>
+
 <center>
     <a class="button1" href='AddEvent.jsp'>Add Event </div>
  </center>
@@ -73,17 +75,24 @@ response.setHeader("Expires","0");
 </section>
 
 <script type="text/javascript">
+ 
+	var a = <%= session.getAttribute("events") %>;
+	console.log(a);
   var i = 0;
-  var n=11;
-  var newhtml = "";
+  // document.write(data[0]);
+ // console.log(data[0]);
+  var n=a.length;
+
+  var newhtml = '';
   var k=n-n%4;
+  var m=0;
   for (i=0;i<k;i=i+4){
       newhtml= newhtml + "<div class='gallery'>";
     
       for(j=0;j<4;j++)
       {
-      newhtml = newhtml + "<div class='thumbnail'> <a href='#'></a><h4> 0" +Math.floor(Math.random() * 10)+ "/09/2020</h4><p class='tag'> Event "+(i+j+1)+"</p><p class='text_column'>Event "+(i+j+1)+" is scheduled after "+(1+Math.floor(Math.random() * 10))+" days.If you have registered for the event, details are sent to you on your mail.</p></div>";
-
+      newhtml = newhtml + "<div class='thumbnail'> <a href='#'></a><h4>" +a[m]['eventdate']+ "</h4><p class='tag'>"+a[m]['eventtitle']+"</p><p class='text_column'>"+a[m]['eventdescribe']+"<br><br><h4>"+a[m]['eventaddedbyid']+"</h4></p></div>";
+		m+=1;
       }
       newhtml = newhtml + "</div>";
   }
@@ -94,10 +103,12 @@ response.setHeader("Expires","0");
     for(j=0;j<n%4;j++)
     {
      
-        newhtml = newhtml + "<div class='thumbnail'> <a href='#'></a><h4> 0" +Math.floor(Math.random() * 10)+ "/09/2020</h4><p class='tag'> Event "+(i+j+1)+"</p><p class='text_column'>Event "+(i+j+1)+" is scheduled after "+(1+Math.floor(Math.random() * 10))+" days.If you have registered for the event, details are sent to you on your mail.</p></div>";
-     }
+        newhtml = newhtml + "<div class='thumbnail'> <a href='#'></a><h4>" +a[m]['eventdate']+ "</h4><p class='tag'>"+a[m]['eventtitle']+"</p><p class='text_column'>"+a[m]['eventdescribe']+"</p></div>";
+    	m+=1 
+    }
     newhtml = newhtml + "</div>";
   }
+ 
   document.getElementById("dem").innerHTML =newhtml;
   </script>
 </body>

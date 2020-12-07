@@ -110,17 +110,18 @@ response.setHeader("Expires","0");
       <div class="container" style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('content/img/m4.jpg') no-repeat center center fixed;background-size: cover; padding-top: 5%;"> 
         <!-- Header -->
        
-          <form id='survey-form'>
+          <form id='survey-form' action="insert" method="post">
               <h1 id='title' style='font-size:180%'>
                   <center><b>Add new Event</b></center>
               </h1><br>
-              <label>Organiser:</label>
-                  <input type='text' placeholder='Enter name'  pattern="([^\s][A-z0-9À-ž\s]+)" style="border-radius: 15px;" required><br />
-            <br>  
-                  <label>Event Title:</label>    
-                  <input type='text' placeholder='Enter the title' style="border-radius: 15px;"  pattern="([^\s][A-z0-9À-ž\s]+)" required><br><br>
+              <center><label>Organiser:</label>
+                  <input type='text' placeholder='Enter name'  pattern="([^\s][A-z0-9À-ž\s]+)" style="border-radius: 15px;" name="org" required><br />
+            <br>  </center>
+              <center><label>Event Title:</label>    
+                  <input type='text' placeholder='Enter the title' style="border-radius: 15px;"  pattern="([^\s][A-z0-9À-ž\s]+)" name="title" required><br><br>
+                  </center>
                   <center><label>Event Date: &nbsp;</label> </center><br><center>   
-                  <input type='date' placeholder='Enter the title' style="border-radius: 15px;" required></center>
+                  <input type='date' placeholder='Enter the title' style="border-radius: 15px;" name="date" required></center>
             
       <br>
       <br>
@@ -128,11 +129,14 @@ response.setHeader("Expires","0");
       
                   <center><label >Details regarding the event:
                   </label></center><br>
+                  <center>
                   <textarea  pattern="([^\s][A-z0-9À-ž\s]+)"
-                      placeholder='Type a message in 200 characters or less'></textarea>
-      
+                      placeholder='Type a message in 200 characters or less' name="detail" ></textarea>
+      			  </center>
               </fieldset>
-              <center><div class="button">Submit </div></center>
+              <br>
+              
+              <center><input type="submit"></center>
           </form>
       </div>
 <!-- Main Container Ends -->

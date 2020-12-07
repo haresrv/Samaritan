@@ -64,10 +64,10 @@ response.setHeader("Expires","0");
 
             <table class="dbdetails" id="dbdetails">
                <tr class="table-header">
-                  <th>Username</th>
-                  <th>Email Address</th>
                   <th>Member Since</th>
-                  <th class="roleHead">Role</th>
+                  <th>Role</th>
+                  <th>Email ID</th>
+                  <th class="roleHead">Username</th>
                   <th class="statusHead">Status</th>
                </tr>
               
@@ -82,18 +82,8 @@ response.setHeader("Expires","0");
 
 <script type="text/javascript">
 
-var db = [
-            {username: "Akash", email:"akashsuper2000@gmail.com" , MemberSince:"04/09/2020", Role:"Admin",Status:"Active" },
-            {username: "Abhishek Marpu", email:"abhimarpu99@gmail.com" , MemberSince:"04/09/2020", Role:"Admin",Status:"Active" },
-            {username: "Hare Sankaran RV", email:"haresrv2000@mail.com" , MemberSince:"04/09/2020", Role:"Admin",Status:"Active" },
-            {username: "Himanshu Kumar", email:"himanshu6k@gmail.com" , MemberSince:"04/09/2020", Role:"Admin",Status:"Active" },
-            {username: "Akshay Penumudi", email:"akshaypenumudi123@gmail.com" , MemberSince:"04/09/2020", Role:"Admin",Status:"Active" },
-            {username: "John Reese", email:"johndoe@mail.com" , MemberSince:"08/09/2020", Role:"Sponsor",Status:"Active" },
-            {username: "Peter Yogorov", email:"pete@mail.com" , MemberSince:"10/09/2020", Role:"Former Employee",Status:"Banned" },
-            {username: "Harold Finch", email:"undercover_finch@yahoo.com" , MemberSince:"04/01/2002", Role:"IT Employee",Status:"Active" },
-            {username: "Fusco", email:"fusco@mail.com" , MemberSince:"04/01/2020", Role:"Moderator",Status:"Suspended" },
-            
-            ];
+var db = <%= session.getAttribute("users") %>;
+console.log(db);
 
 var table = document.getElementById("dbdetails");
 var col = [];

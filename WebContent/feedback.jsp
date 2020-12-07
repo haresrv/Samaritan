@@ -37,12 +37,12 @@ response.setHeader("Expires","0");
                 Survey Form
             </h1>
             <p id='description'>
-                Please fill in the details &#128540;
+                Please fill in the details &#129303;
             </p>
         </header>
 
 
-        <form id='survey-form'>
+        <form id='survey-form' action='feedback' method='post'>
             <fieldset id='personal-info'>
 
                 <label for='name' id='name-label'>name:</label>

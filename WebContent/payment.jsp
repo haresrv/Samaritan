@@ -39,6 +39,14 @@
 
     </script>
 
+    <script src="${pageContext.request.contextPath}/content/jquery/jquery.min.js"></script>
+    <script>
+    jQuery(document).ready(function($) {
+    	$(document).ready(function() {
+            $('#navigation').load('${pageContext.request.contextPath}/content/jquery/navigationbar.jsp');
+        });
+    });
+    </script>
 </head>
 
 <body>
@@ -51,8 +59,10 @@ response.setHeader("Expires","0");
 	if(session.getAttribute("username")==null)
 		response.sendRedirect("login.jsp");
 %>
-    <!-- Main Container -->
-    <div class="container ">
+    <section class="hero is-info is-fullheight">
+        <div id="navigation"> </div>
+	<!-- Main Container -->
+    <div class="container c" style="width:400px;">
         <div class="row	" style="width: 75rem;font-size:0.9em;">
             <div class="col-12 col-md-4">
                 <!-- Card box -->
@@ -154,6 +164,8 @@ response.setHeader("Expires","0");
         </div>
     </div>
 <!-- End of Main Container -->
+</section>
+    
 </body>
 
 </html>

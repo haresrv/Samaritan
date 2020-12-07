@@ -30,23 +30,33 @@ response.setHeader("Expires","0");
             <table class="table table-striped table-bordered mx-auto w-auto"> 
                 <tr>
                     <th>Receipt No.</th>
+                     <%  if(session.getAttribute("receiptid")!=null) {%>
                     <td><%= session.getAttribute("receiptid") %></td>
+                    <%} %>
                 </tr>
                 <tr>
                     <th>Dated on</th>
+                     <%  if(session.getAttribute("donated_date")!=null){ %>
                     <td><%= session.getAttribute("donated_date") %></td>
+                    <%} %>
                 </tr>
                 <tr>
                     <th>Recieved with thanks from</th>
+                     <%  if(session.getAttribute("username")!=null) {%>
                     <td><%= session.getAttribute("username") %></td>
+                    <%} %>
                 </tr>
                 <tr>
                     <th>PAN No.</th>
+                     <%  if(session.getAttribute("pan_number")!=null) {%>
                     <td><%= session.getAttribute("pan_number") %></td>
+                    <%} %>
                 </tr>
                 <tr>
                     <th>Sum of Rupees</th>
+                     <%  if(session.getAttribute("amount")!=null) {%>
                     <td>&#x20B9; <%= session.getAttribute("amount") %> only</td>
+                    <%} %>
                 </tr>
                 <tr>
                     <th>Signature</th>

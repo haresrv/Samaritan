@@ -74,7 +74,7 @@ response.setHeader("Expires","0");
                     </a>
                 </span>
                 <span class="navbar-item">
-                    <a class="button is-white is-outlined" href="events.jsp">
+                    <a class="button is-white is-outlined" href="events">
                         <span class="icon">
                             <i class="fa fa-calendar"></i>
                         </span>
